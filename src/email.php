@@ -2,7 +2,7 @@
 
 namespace App;
 
-require '../vendor/autoload.php'; // If you're using Composer (recommended)
+require dirname(__FILE__, 2) . '/vendor/autoload.php';
 
 try {
     $sendgrid_api_key = getenv('SENDGRID_API_KEY');
